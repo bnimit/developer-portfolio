@@ -432,6 +432,10 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
 }
 .service-card.modern {
   position: relative;
@@ -494,6 +498,7 @@ body {
 .service-icon img {
   width: 48px;
   height: 48px;
+  margin-top: 15px;
 }
 .service-card.modern h3 {
   font-size: 1.25rem;
@@ -506,6 +511,12 @@ body {
   color: #333;
 }
 @media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -538,4 +549,10 @@ body {
 .contact-alert.error {
   background: linear-gradient(90deg, #ffb3b3 0%, #fff0f0 100%);
   color: #a10000;
+}
+
+/* Fix icon visibility for database management */
+.database-management .service-icon {
+  background: #fff !important;
+  border: 2px solid #e0e0e0;
 }

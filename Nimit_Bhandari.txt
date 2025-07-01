@@ -1,0 +1,84 @@
+
+Nimit Bhandari
++91-9119716004  ●   Uttarakhand, India   ●  nimitbhandari@outlook.com ● https://www.github.com/bnimit 
+
+
+PROFESSIONAL SUMMARY
+
+Senior Full Stack Engineer with 9+ years of experience building scalable SaaS and fintech solutions. Proven track record of leading end-to-end development cycles, reducing deployment times by 85%, and improving system performance by up to 90%. Expertise in modern web technologies, API development, and remote team collaboration across multiple time zones.
+Core Competencies: Ruby on Rails • React/Next.js • Golang • Python • GraphQL • REST APIs • Docker • Kubernetes • Payment Integration • Remote Leadership.
+PROFESSIONAL EXPERIENCE
+
+Lead Full Stack Engineer	Feb 2024 - Feb 2025
+Clikdone.com | Location: Remote( Dubai, United Arab Emirates )
+Led MVP development and technical architecture for early-stage startup
+Architected MVP for the startup, leading full-stack development of ERP module and payment features for the app
+Integrated Stripe payment system enabling premium user onboarding along with subscription capabilities
+Built real-time search using Turbo/Stimulus, reducing response time from 2s to 200ms
+Automated deployment pipeline with Git, reducing deployment time by 85% (45min to 7min)
+Implemented Sidekiq background processing for 10K+ daily email/SMS notifications
+Integrated and automated onboarding for Twilio's SMS API for User onboarding removing all manual processing
+
+Full Stack Engineer	Nov 2022 - May 2023
+Dome Global Inc. | Location: Remote( India )
+Built foundational platform architecture for pre-seed PaaS startup
+Architected scalable REST API backend using Golang with ArangoDB graph database for complex relationships
+Developed responsive Next.js frontend application with modern React patterns and component architecture
+Implemented secure JWT-based authentication pipeline with role-based access control and session management
+Established Git-based CI/CD automation pipeline for seamless development and deployment workflows
+Created comprehensive Swagger API documentation and technical specifications for development team
+Full Stack Engineer	Aug 2019 - Oct 2022
+Mavenlink Inc. | Location: Remote ( Salt Lake City, Utah, United States )
+Enhanced core project management platform serving 100K+ users
+Extended multi-currency support for budgeting/invoicing enabling $50M+ international transactions
+Built GraphQL API endpoints for task management improving data fetching efficiency by 60%
+Optimized task module performance through database tuning, reducing page load times by 90%
+Implemented expense workflows supporting 15+ currencies with real-time conversion
+Managed production deployments maintaining 99.8% application uptime
+Collaborated with 8 product managers and 5 UX designers on feature development
+
+
+
+
+
+
+Senior Software Engineer	 Nov 2015 - July 2019
+Goldman Sachs & Co. | Location: Salt Lake City, Utah, United States
+Strategic engagement with application development teams to provide timely end-to-end delivery of appropriate platform solutions. Driving strategic initiatives and delivery of key programs of work across Middleware Engineering.
+Automated FX derivatives clearing increasing cleared capital capacity by 70% ($2B+ volume)
+Implemented NDF clearing flows across G10 currencies processing 50K+ daily trades
+Built trade eligibility automation for FX Options/Forwards reducing manual processing by 95%
+Enhanced Credit Clearing workflows for Brexit compliance preventing $10M+ penalties
+Delivered MIFID-II regulatory framework ensuring 100% compliance across trading operations
+Trained and mentored 10 consultant engineers on proprietary middleware systems
+
+
+Senior Research Engineer 	Jul 2011 - Jul 2014
+Hitachi R&D | Location: Bangalore, India
+Conducted market research for Enterprise Management Software identifying $50M+ opportunity
+Developed 40+ technical POCs for enterprise clients achieving 60% conversion rate
+Established strategic partnership between Hitachi Japan and TCS India for joint solutions
+
+Technical Consultant	      Aug 2010 - Jun 2011
+Oracle, India | Location: Bangalore, India	
+Led 75+ technology discovery sessions generating highest sales pipeline on 12-person team
+Created 30+ POC demonstrations for database/middleware solutions supporting $5M+ quarterly sales
+
+
+Technology Consultant	Feb 2009 - Aug 2010
+Hewlett Packard India | Location: Bangalore, India	
+Resolved 140+ enterprise deployment cases achieving 70% client demonstration close rate
+Delivered technical solutions for HP enterprise customers with professional services team
+EDUCATION
+Dehradun Institute Of Technology | B.Tech in Information Technology	Nov 2004 - June 2008
+GPA: 3.4/4.0
+
+University of Utah | Master of Science in Information Systems	Aug 2014- Aug 2015
+GPA: 4/4.0
+Student Associate, Lassonde Entrepreneurship Institute
+
+SKILLS
+Languages & Frameworks: Ruby on Rails (ROR), Ruby, React, Next.js, Node.js, Java, Golang, Python, Javascript, Typescript, HTML5, CSS3, jQuery, GraphQL
+Databases: PostgreSQL, ArangoDB, MySQL, Oracle, Redis, MongoDB
+DevOps & Tools: Docker, Kubernetes, Git, AWS, Heroku, CI/CD, Sidekiq, Stripe API, JWT, Swagger
+Specializations: Remote Team Leadership, Cross-functional Collaboration, Performance Optimization, Payment Integration, API Development, Graph Databases

@@ -345,20 +345,46 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .minimal-header {
-    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
-  }
-  .hero-content {
-    padding: 1.2rem 0.2rem 0.7rem 0.2rem;
+  body {
+    font-size: 0.92rem;
   }
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .hero-desc {
+    font-size: 0.98rem;
+    margin-bottom: 1.2rem;
+  }
+  .minimal-section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
   }
   .minimal-section {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+    margin-top: 1.2rem;
+  }
+  .service-card {
+    padding: 0.7rem 0.3rem 1rem 0.3rem;
+  }
+  .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .service-card p {
+    font-size: 0.95rem;
+  }
+  .core-competencies li,
+  .skills-list li {
+    font-size: 0.92rem;
+    padding: 0.18rem 0.6rem;
+  }
+  .job h3 {
+    font-size: 0.98rem;
   }
   .footer {
-    padding: 0.7rem 0;
+    font-size: 0.92rem;
+    padding: 0.5rem 0;
   }
   .overlay-menu {
     width: 100vw;

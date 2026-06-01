@@ -531,6 +531,121 @@ body {
 }
 
 /* ============================================
+   EXPANDABLE EXPERIENCE DETAILS
+   ============================================ */
+.ls-row {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.ls-row::after {
+    content: '+';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green-dim);
+    font-size: 0.9rem;
+    transition: all var(--transition);
+    opacity: 0;
+}
+
+.ls-row:hover::after,
+.ls-row:focus::after {
+    opacity: 1;
+}
+
+.ls-row.open::after {
+    content: '−';
+    opacity: 1;
+    color: var(--green);
+}
+
+.exp-detail {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.35s ease,
+                margin 0.4s ease,
+                padding 0.4s ease;
+    margin: 0 0;
+    padding: 0 0.5rem;
+    border-left: 2px solid var(--green-muted);
+    margin-left: 0.25rem;
+}
+
+.exp-detail.open {
+    max-height: 800px;
+    opacity: 1;
+    margin-bottom: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.exp-cmd-line {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+}
+
+.exp-cmd-line .cmd {
+    min-height: 1.2em;
+}
+
+.exp-content {
+    padding-left: 0.5rem;
+}
+
+.exp-content .term-p {
+    margin-bottom: 0.35rem;
+    font-size: 0.85rem;
+}
+
+.exp-list {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+.exp-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.exp-detail.open .exp-list li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* stagger the bullet reveals */
+.exp-detail.open .exp-list li:nth-child(1) { transition-delay: 0.15s; }
+.exp-detail.open .exp-list li:nth-child(2) { transition-delay: 0.28s; }
+.exp-detail.open .exp-list li:nth-child(3) { transition-delay: 0.41s; }
+.exp-detail.open .exp-list li:nth-child(4) { transition-delay: 0.54s; }
+.exp-detail.open .exp-list li:nth-child(5) { transition-delay: 0.67s; }
+.exp-detail.open .exp-list li:nth-child(6) { transition-delay: 0.80s; }
+
+.exp-list li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 0.75rem;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {

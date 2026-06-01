@@ -162,6 +162,91 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============================================
+// EXPANDABLE EXPERIENCE DETAILS
+// ============================================
+const expFiles = {
+    eukarya: 'cat eukarya.md',
+    clikdone: 'cat clikdone.md',
+    dome: 'cat dome_global.md',
+    mavenlink: 'cat mavenlink.md',
+    gs: 'cat goldman_sachs.md',
+    hitachi: 'cat hitachi_rd.md',
+    oracle: 'cat oracle_india.md',
+    hp: 'cat hp_india.md'
+};
+
+const activeExpTypewriters = new Map();
+
+function toggleExpDetail(row) {
+    const company = row.dataset.company;
+    const detail = document.getElementById(`exp-${company}`);
+    const cmdEl = detail.querySelector('.exp-cmd-line .cmd');
+    const cursor = detail.querySelector('.exp-cmd-line .cursor');
+    const isOpen = detail.classList.contains('open');
+
+    // Close all others (accordion style — optional, remove if you want multiple open)
+    document.querySelectorAll('.exp-detail.open').forEach(openDetail => {
+        if (openDetail !== detail) {
+            openDetail.classList.remove('open');
+            const openRow = document.querySelector(`.ls-row[data-company="${openDetail.id.replace('exp-', '')}"]`);
+            if (openRow) openRow.classList.remove('open');
+            openRow?.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    if (isOpen) {
+        detail.classList.remove('open');
+        row.classList.remove('open');
+        row.setAttribute('aria-expanded', 'false');
+        // cancel any ongoing typewriter
+        if (activeExpTypewriters.has(company)) {
+            clearTimeout(activeExpTypewriters.get(company));
+            activeExpTypewriters.delete(company);
+        }
+        return;
+    }
+
+    detail.classList.add('open');
+    row.classList.add('open');
+    row.setAttribute('aria-expanded', 'true');
+
+    // Type the command
+    const text = expFiles[company] || `cat ${company}.md`;
+    cmdEl.textContent = '';
+    cursor.classList.add('blink');
+
+    // Cancel any previous typewriter for this company
+    if (activeExpTypewriters.has(company)) {
+        clearTimeout(activeExpTypewriters.get(company));
+    }
+
+    let i = 0;
+    function tick() {
+        if (i < text.length) {
+            cmdEl.textContent += text.charAt(i);
+            i++;
+            const timeoutId = setTimeout(tick, 30 + Math.random() * 20);
+            activeExpTypewriters.set(company, timeoutId);
+        } else {
+            cursor.classList.remove('blink');
+            cursor.style.opacity = '0';
+            activeExpTypewriters.delete(company);
+        }
+    }
+    tick();
+}
+
+document.querySelectorAll('.ls-row[data-company]').forEach(row => {
+    row.addEventListener('click', () => toggleExpDetail(row));
+    row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleExpDetail(row);
+        }
+    });
+});
+
+// ============================================
 // INIT
 // ============================================
 runBoot();

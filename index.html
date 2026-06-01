@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nimit@portfolio:~$</title>
+    <meta name="description" content="Nimit Bhandari — Senior Full Stack Engineer. Go, Rust, TypeScript, Ruby. Terminal-style portfolio.">
+    <meta name="keywords" content="Nimit Bhandari, Full Stack Engineer, Go, Rust, TypeScript, Terminal Portfolio">
+    <meta name="author" content="Nimit Bhandari">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#050505">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="nimit@portfolio:~$">
+    <meta property="og:description" content="Senior Full Stack Engineer. Go, Rust, TypeScript, Ruby.">
+    <meta property="og:image" content="https://nimitbhandari.dev/images/profile.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="nimit@portfolio:~$">
+    <meta name="twitter:description" content="Senior Full Stack Engineer. Go, Rust, TypeScript, Ruby.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nimit Bhandari",
+        "jobTitle": "Senior Full Stack Engineer",
+        "url": "https://nimitbhandari.dev",
+        "email": "mailto:nimitbhandari@outlook.com",
+        "telephone": "+91-9119716004",
+        "image": "https://nimitbhandari.dev/images/profile.jpg",
+        "sameAs": ["https://github.com/bnimit"],
+        "alumniOf": [
+            {"@type": "EducationalOrganization", "name": "University of Utah"},
+            {"@type": "EducationalOrganization", "name": "Dehradun Institute of Technology"}
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scanlines Overlay -->
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- Boot Sequence -->
+    <div class="boot" id="boot">
+        <div class="boot-log" id="boot-log"></div>
+    </div>
+
+    <!-- Terminal Window -->
+    <div class="terminal" id="terminal">
+        <!-- Title Bar -->
+        <div class="titlebar">
+            <div class="titlebar-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+            </div>
+            <span class="titlebar-title">nimit@portfolio — ~</span>
+            <div class="titlebar-empty"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="terminal-body">
+
+            <!-- Nav -->
+            <nav class="term-nav" aria-label="Main">
+                <span class="prompt">~</span>
+                <a href="#about" class="cmd-link"><span class="cmd">cd</span> about</a>
+                <a href="#experience" class="cmd-link"><span class="cmd">cd</span> experience</a>
+                <a href="#skills" class="cmd-link"><span class="cmd">cd</span> skills</a>
+                <a href="#projects" class="cmd-link"><span class="cmd">cd</span> projects</a>
+                <a href="#contact" class="cmd-link"><span class="cmd">cd</span> contact</a>
+            </nav>
+
+            <!-- Hero -->
+            <header class="term-section" id="hero">
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~$</span>
+                    <span class="cmd" id="hero-cmd"></span><span class="cursor blink" id="hero-cursor">&nbsp;</span>
+                </div>
+                <div class="term-output" id="hero-output" style="display:none">
+                    <div class="hero-top">
+                        <div class="ascii-art" aria-label="ASCII signature">
+<span class="dim">                                     </span>
+<span class="dim">,--.  ,--.,--.          ,--.  ,--.   </span>
+<span class="dim">|  ,'.|  |`--',--,--,--.`--',-'  '-. </span>
+<span class="dim">|  |' '  |,--.|        |,--.'-.  .-' </span>
+<span class="dim">|  | `   ||  ||  |  |  ||  |  |  |   </span>
+<span class="dim">`--'  `--'`--'`--`--`--'`--'  `--'   </span>
+<span class="dim">                                     </span>
+<span class="dim">                                                             </span>
+<span class="dim">,-----.  ,--.                        ,--.               ,--. </span>
+<span class="dim">|  |) /_ |  ,---.  ,--,--.,--,--,  ,-|  | ,--,--.,--.--.`--' </span>
+<span class="dim">|  .-.  \|  .-.  |' ,-.  ||      \' .-. |' ,-.  ||  .--',--. </span>
+<span class="dim">|  '--' /|  | |  |\ '-'  ||  ||  |\ `-' |\ '-'  ||  |   |  | </span>
+<span class="dim">`------' `--' `--' `--`--'`--''--' `---'  `--`--'`--'   `--' </span>
+<span class="dim">                                                             </span>
+                        </div>
+                        <div class="term-img hero-img">
+                            <img src="images/profile.jpg" alt="Nimit Bhandari" loading="eager">
+                            <span class="term-img-caption">[image: profile.jpg]</span>
+                        </div>
+                    </div>
+                    <p class="term-p">Senior Full Stack Engineer</p>
+                    <p class="term-p dim">Go · Rust · TypeScript · Ruby · React · GraphQL</p>
+                    <p class="term-p dim">Previously at Goldman Sachs, Mavenlink, Eukarya</p>
+                </div>
+            </header>
+
+            <!-- About -->
+            <section class="term-section" id="about" aria-labelledby="about-label">
+                <h2 class="sr-only" id="about-label">About</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/about$</span>
+                    <span class="cmd">cat about.txt</span>
+                </div>
+                <div class="term-output">
+                    <p class="term-p">Full-stack engineer with <strong>10+ years</strong> across fintech, SaaS, and open-source geospatial systems.</p>
+                    <p class="term-p">Built <a href="https://github.com/reearth/ygo" target="_blank" rel="noopener" class="link">reearth/ygo</a> — a Go CRDT library with feature parity to Yjs and YRS.</p>
+                    <p class="term-p">Maintain <a href="https://github.com/reearth/resium" target="_blank" rel="noopener" class="link">reearth/resium</a> — React binding for CesiumJS, ~143K npm downloads/month.</p>
+                    <p class="term-p">Most at home writing <strong>Go</strong>, <strong>Rust</strong>, <strong>TypeScript</strong>, and <strong>Ruby</strong>.</p>
+
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="term-section" id="experience" aria-labelledby="exp-label">
+                <h2 class="sr-only" id="exp-label">Experience</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/experience$</span>
+                    <span class="cmd">ls -la</span>
+                </div>
+                <div class="term-output">
+                    <div class="ls-table">
+                        <div class="ls-header">
+                            <span>Permissions</span>
+                            <span>Date</span>
+                            <span>Role</span>
+                            <span>Company</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2025-09</span>
+                            <span class="role">Senior Full Stack Engineer</span>
+                            <span class="company">Eukarya</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2024-02</span>
+                            <span class="role">Lead Full Stack Engineer</span>
+                            <span class="company">Clikdone.com</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2022-11</span>
+                            <span class="role">Full Stack Engineer</span>
+                            <span class="company">Dome Global Inc.</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2019-08</span>
+                            <span class="role">Full Stack Engineer</span>
+                            <span class="company">Mavenlink Inc.</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2015-11</span>
+                            <span class="role">Senior Software Engineer</span>
+                            <span class="company">Goldman Sachs</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2011-06</span>
+                            <span class="role">Senior Research Engineer</span>
+                            <span class="company">Hitachi R&D</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2010-08</span>
+                            <span class="role">Technical Consultant</span>
+                            <span class="company">Oracle, India</span>
+                        </div>
+                        <div class="ls-row">
+                            <span class="perm">drwxr-xr-x</span>
+                            <span class="date">2009-02</span>
+                            <span class="role">Technology Consultant</span>
+                            <span class="company">Hewlett Packard India</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="term-section" id="skills" aria-labelledby="skills-label">
+                <h2 class="sr-only" id="skills-label">Skills</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/skills$</span>
+                    <span class="cmd">neofetch</span>
+                </div>
+                <div class="term-output">
+                    <div class="neofetch">
+                        <div class="neofetch-logo" aria-hidden="true">
+<span class="logo-green">  ██████╗ </span><span class="logo-dim">  Nimit Bhandari</span>
+<span class="logo-green"> ██╔════╝ </span><span class="logo-dim">  ───────────────</span>
+<span class="logo-green"> ██║      </span><span class="logo-dim">  OS: Engineering</span>
+<span class="logo-green"> ██║      </span><span class="logo-dim">  Shell: zsh</span>
+<span class="logo-green"> ╚██████╗ </span><span class="logo-dim">  WM: Go / Rust</span>
+<span class="logo-green">  ╚═════╝ </span><span class="logo-dim">  Uptime: 10+ yrs</span>
+                        </div>
+                        <div class="neofetch-info">
+                            <div class="bar-row"><span class="bar-label">Go</span><div class="bar"><div class="bar-fill" style="width:95%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">Rust</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">TypeScript</span><div class="bar"><div class="bar-fill" style="width:92%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">Ruby</span><div class="bar"><div class="bar-fill" style="width:88%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">React</span><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">GraphQL</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+                            <div class="bar-row"><span class="bar-label">Docker</span><div class="bar"><div class="bar-fill" style="width:82%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="term-section" id="projects" aria-labelledby="projects-label">
+                <h2 class="sr-only" id="projects-label">Projects</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/projects$</span>
+                    <span class="cmd">git log --oneline</span>
+                </div>
+                <div class="term-output">
+                    <div class="git-log">
+                        <div class="git-commit">
+                            <span class="git-hash">a1b2c3d</span>
+                            <span class="git-msg"><a href="https://github.com/reearth/ygo" target="_blank" rel="noopener" class="link">feat: implement reearth/ygo — Go CRDT library with Yjs parity</a></span>
+                            <span class="git-meta">Go · 10+ releases</span>
+                        </div>
+                        <div class="git-commit">
+                            <span class="git-hash">e4f5g6h</span>
+                            <span class="git-msg"><a href="https://github.com/reearth/resium" target="_blank" rel="noopener" class="link">maintain: reearth/resium — React binding for CesiumJS</a></span>
+                            <span class="git-meta">TypeScript · 143K/mo</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="term-section" id="education" aria-labelledby="edu-label">
+                <h2 class="sr-only" id="edu-label">Education</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/education$</span>
+                    <span class="cmd">cat degrees.json</span>
+                </div>
+                <div class="term-output">
+                    <pre class="json-code">[
+  {
+    <span class="key">"institution"</span>: <span class="str">"University of Utah"</span>,
+    <span class="key">"degree"</span>: <span class="str">"Master of Science in Information Systems"</span>,
+    <span class="key">"year"</span>: <span class="num">"2014 — 2015"</span>,
+    <span class="key">"gpa"</span>: <span class="num">4.0</span>
+  },
+  {
+    <span class="key">"institution"</span>: <span class="str">"Dehradun Institute of Technology"</span>,
+    <span class="key">"degree"</span>: <span class="str">"B.Tech in Information Technology"</span>,
+    <span class="key">"year"</span>: <span class="num">"2004 — 2008"</span>,
+    <span class="key">"gpa"</span>: <span class="num">3.4</span>
+  }
+]</pre>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="term-section" id="contact" aria-labelledby="contact-label">
+                <h2 class="sr-only" id="contact-label">Contact</h2>
+                <div class="term-line">
+                    <span class="prompt">visitor@nimit:~/contact$</span>
+                    <span class="cmd">echo $CONTACT_INFO</span>
+                </div>
+                <div class="term-output">
+                    <p class="term-p"><span class="key">email:</span> <a href="mailto:nimitbhandari@outlook.com" class="link">nimitbhandari@outlook.com</a></p>
+                    <p class="term-p"><span class="key">phone:</span> <a href="tel:+919119716004" class="link">+91-9119716004</a></p>
+                    <p class="term-p"><span class="key">github:</span> <a href="https://github.com/bnimit" target="_blank" rel="noopener" class="link">github.com/bnimit</a></p>
+                    <p class="term-p"><span class="key">resume:</span> <a href="Nimit's Resume.pdf" target="_blank" class="link">Nimit's Resume.pdf</a></p>
+                    <br>
+                    <div class="term-line">
+                        <span class="prompt">visitor@nimit:~/contact$</span>
+                        <span class="cmd" id="contact-cmd"></span><span class="cursor blink">&nbsp;</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer / Status Bar -->
+            <footer class="statusbar">
+                <span class="status-left">NORMAL</span>
+                <span class="status-center">nimit@portfolio</span>
+                <span class="status-right" id="uptime">uptime: loading...</span>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
